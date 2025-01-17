@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* SA0001: I Nishtha Chaudhari, 000930353 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else. */
+
+body {
+    font-family: 'Cambria', 'Georgia', 'Times New Roman', serif;
+    margin: 30px;
+    background-image: url('https://img.freepik.com/free-vector/abstract-soft-colorful-watercolor-texture-background-design_1055-13589.jpg');
+    background-size: cover;
+}
+
+h1 {
+    color: #040b59;
+    text-align: center;
+}
+
+.timeout {
+    color: #77778e;
+    font-weight: bold;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 30%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.image.spin {
+    transform: rotate(360deg); /* Adds a spinning effect */
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reset-time {
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#hit-me-button {
+    background-color: #4b52c8;
+    color: white;
+    padding: 10px 20px;
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#hit-me-button:hover {
+    background-color: #7c8acf; /* Changes button color on hover */
+}
+
+#image-change-count, #time-remaining {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #136984;
+}
+
+footer {
+    text-align: center;
+    color: #136984;
+    font-weight: bold;
+}
